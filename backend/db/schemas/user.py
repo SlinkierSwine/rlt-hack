@@ -2,8 +2,17 @@ from typing import Union
 from pydantic import BaseModel
 
 
-class User(BaseModel):
-    username: str
+class UserBase(BaseModel):
     email: str
-    full_name: Union[str, None] = None
-    active: bool = True
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool = True
+    
+    class Config:
+        orm_mode = True
