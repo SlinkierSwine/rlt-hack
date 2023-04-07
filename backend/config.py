@@ -1,7 +1,13 @@
-import os
-from dotenv import load_dotenv
+from pydantic import BaseSettings
 
-load_dotenv()
 
-DB_USER = os.environ.get("DB_USER")
-DB_PASSWORD = os.environ.get("DB_PASSWORD")
+class DBSettings(BaseSettings):
+    username: str
+    password: str
+    database: str
+    host: str
+    port: str
+
+    class Config:
+        env_prefix = "DB_"
+        env_file = ".env"
