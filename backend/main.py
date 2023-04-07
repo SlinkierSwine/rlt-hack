@@ -1,11 +1,16 @@
 import uvicorn
 from fastapi import FastAPI
+from fastapi.security import OAuth2PasswordBearer
 from starlette.middleware.cors import CORSMiddleware
 from backend.routes.router import router
+from backend.db.db import Base, engine
 import logging
 
 
+Base.metadata.create_all(bind=engine)
+
 app = FastAPI()
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 origins = ["*"]
 
 app.add_middleware(
