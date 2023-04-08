@@ -5,6 +5,7 @@ import upArrow from '../../image/upArrow.svg'
 import star from '../../image/star.svg'
 import left_arrow from '../../image/left_arrow.svg'
 import rightArrow from '../../image/right_arrow.svg'
+import {NavLink} from 'react-router-dom'
 
 export const Home = () => {
     return(
@@ -111,28 +112,32 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className="lessons">
-                    <div className="lesson">
-                        <div className="backLesson"></div>
-                        <div className="lessonContent">
-                            <div className="hLesson">Введение в продажи</div>
-                            <div className="chapter">Глава 1</div>
-                            <div className="procent">
-                                <div className="procentNumber">100%</div>
-                                <div className="star"><img src={star}></img></div>
+                    <NavLink to='/course'>
+                        <div className="lesson">
+                            <div className="backLesson"></div>
+                            <div className="lessonContent">
+                                <div className="hLesson">Введение в продажи</div>
+                                <div className="chapter">Глава 1</div>
+                                <div className="procent">
+                                    <div className="procentNumber">100%</div>
+                                    <div className="star"><img src={star}></img></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="lesson">
-                        <div className="backLesson"></div>
-                        <div className="lessonContent">
-                            <div className="hLesson">Введение в продажи</div>
-                            <div className="chapter">Глава 1</div>
-                            <div className="procent">
-                                <div className="procentNumber">100%</div>
-                                <div className="star"><img src={star}></img></div>
+                    </NavLink>
+                    <NavLink to='/course'>
+                        <div className="lesson">
+                            <div className="backLesson"></div>
+                            <div className="lessonContent">
+                                <div className="hLesson">Введение в продажи</div>
+                                <div className="chapter">Глава 1</div>
+                                <div className="procent">
+                                    <div className="procentNumber">100%</div>
+                                    <div className="star"><img src={star}></img></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </NavLink>
                 </div>   
              </div>
              <div className="news">

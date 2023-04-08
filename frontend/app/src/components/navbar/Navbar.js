@@ -17,7 +17,7 @@ export const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to = '/personalArea'>
+                    <NavLink to = '/registration'>
                         личный кабинет
                     </NavLink>
                 </li>
