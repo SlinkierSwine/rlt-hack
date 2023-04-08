@@ -16,6 +16,7 @@ class BaseUser(Base):
     is_active = db.Column(db.Boolean, default=True)
 
     user = db.orm.relationship("User", uselist=False, backref="base_user")
+    company_moderator = db.orm.relationship("CompanyModerator", uselist=False, backref="base_user")
 
 
 class User(Base):
