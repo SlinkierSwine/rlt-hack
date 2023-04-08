@@ -1,10 +1,9 @@
 from datetime import datetime
-from typing import Union
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 
 
 class BaseUserBase(BaseModel):
-    email: str
+    email: EmailStr
     name: str
     surname: str
     middlename: str
@@ -20,5 +19,19 @@ class BaseUser(BaseUserBase):
     created_at: datetime
     updated_at: datetime
     
+    class Config:
+        orm_mode = True
+
+
+class UserCreate(BaseUserCreate):
+    pass
+
+
+class User(BaseModel):
+    id: int
+    experience: int
+    rating: int
+    base_user: BaseUser
+
     class Config:
         orm_mode = True

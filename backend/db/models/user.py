@@ -22,8 +22,8 @@ class User(Base):
     __tablename__ = "users"
 
     id = db.Column(db.Integer, primary_key=True, index=True)
-    experience = db.Column(db.Integer)
-    rating = db.Column(db.Integer)
+    experience = db.Column(db.Integer, default=0)
+    rating = db.Column(db.Integer, default=0)
     
     base_user_id = db.Column(db.Integer, db.ForeignKey("base_users.id"))
 
