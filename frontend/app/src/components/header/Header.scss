@@ -1,0 +1,33 @@
+.header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logoHeader {
+    margin-left: 65px;
+}
+
+input {
+    background: #F9F9F9;
+    border: 1px solid #1E1E1E;
+    border-radius: 100px;
+    margin-left: 117px;
+    padding-left: 23px;
+    padding-top: 9px;
+    width: 369px;
+    height: 50px;
+}
+
+input::placeholder {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 140%;
+    color: #A2A4AB;
+  }
+
+  .person {
+    margin-left: 98px;
+  }
