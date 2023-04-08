@@ -10,7 +10,7 @@ router = APIRouter(prefix="/courses")
 
 @router.get("/") 
 def courses_view(db: Session = Depends(get_db)):
-    response = {'message': 'return JSON data'}
+    response = {'message': 'return JSON data. Courses'}
     #TODO: Collect all data from databases
     #response = json.dumps(response)
     #response = json.loads(response)
@@ -19,4 +19,5 @@ def courses_view(db: Session = Depends(get_db)):
 
 @router.get("/course/")
 def course_view(db: Session = Depends(get_db)):
-    response = {'message': 'return JSON data'}
+    response = {'message': 'return JSON data. Course'}
+
