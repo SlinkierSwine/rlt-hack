@@ -10,11 +10,6 @@ import logging
 app = FastAPI()
 
 
-@app.on_event("startup")
-def on_startup():
-    init_db()
-
-
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 origins = ["*"]
