@@ -1,0 +1,288 @@
+.backgroundColor {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 1024px;
+    .backgroundImage{
+        position: relative;
+        .leftImage {
+            background-image: url(../../image/leftDecor.svg);
+            width: 720px;
+            height: 1024px;
+            background-size: cover;
+            position: absolute;
+            display: inline-block;
+            z-index: 1;
+        }
+        .rightImage {
+            background-image: url(../../image/rightDecor.svg);
+            width: 720px;
+            height: 1024px;
+            background-size: cover;
+            position: absolute;
+            display: inline-block;
+            text-align: right;
+            right: 0px;
+            z-index: 1;
+        }
+        .hLogin {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 59px;
+            color: #17202C;
+            z-index: 2;
+            position: absolute;
+            margin-top: 133px;
+            text-align: center;
+            width: 100%;
+
+        }
+        .loginContent {
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .passContent {
+                padding: 0px;
+                height: 50px;
+                margin-top: 40px;
+                z-index: 3;
+                .password {
+                    background: #F9F9F9;                    
+                    box-shadow: 0px 106px 42px rgba(23, 32, 44, 0.01), 0px 60px 36px rgba(23, 32, 44, 0.05), 0px 26px 26px rgba(23, 32, 44, 0.09), 0px 7px 15px rgba(23, 32, 44, 0.1), 0px 0px 0px rgba(23, 32, 44, 0.1);
+                    border-radius: 100px;
+                    width: 726px;
+                    height: 48px;
+                    border: none;
+                    padding-left: 23px;
+                    background: url(../../image/lock.svg) no-repeat center;
+                    background-position: 699px;
+                    z-index: 3;
+                }
+                input::placeholder {
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 130%;
+                    color: #A2A4AB;
+                  }
+            }
+            .mailContent {
+                padding: 0px;
+                height: 50px;
+                margin-top: 40px;
+                z-index: 3;
+                .mail {
+                    background: #F9F9F9;                    
+                    box-shadow: 0px 106px 42px rgba(23, 32, 44, 0.01), 0px 60px 36px rgba(23, 32, 44, 0.05), 0px 26px 26px rgba(23, 32, 44, 0.09), 0px 7px 15px rgba(23, 32, 44, 0.1), 0px 0px 0px rgba(23, 32, 44, 0.1);
+                    border-radius: 100px;
+                    width: 726px;
+                    height: 48px;
+                    border: none;
+                    padding-left: 23px;
+                    background: url(../../image/mail.svg) no-repeat center;
+                    background-position: 699px;
+                    z-index: 3;
+                }
+                input::placeholder {
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 130%;
+                    color: #A2A4AB;
+                  }
+            }
+            .numberContent {
+                padding: 0px;
+                height: 50px;
+                margin-top: 40px;
+                z-index: 3;
+                .number {
+                    background: #F9F9F9;                    
+                    box-shadow: 0px 106px 42px rgba(23, 32, 44, 0.01), 0px 60px 36px rgba(23, 32, 44, 0.05), 0px 26px 26px rgba(23, 32, 44, 0.09), 0px 7px 15px rgba(23, 32, 44, 0.1), 0px 0px 0px rgba(23, 32, 44, 0.1);
+                    border-radius: 100px;
+                    width: 726px;
+                    height: 48px;
+                    border: none;
+                    padding-left: 23px;
+                    background: url(../../image/number.svg) no-repeat center;
+                    background-position: 699px;
+                    z-index: 3;
+                }
+                input::placeholder {
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 130%;
+                    color: #A2A4AB;
+                  }
+            }
+            .repeatPassContent {
+                padding: 0px;
+                height: 50px;
+                margin-top: 40px;
+                z-index: 3;
+                .repeatPassword {
+                    background: #F9F9F9;                    
+                    box-shadow: 0px 106px 42px rgba(23, 32, 44, 0.01), 0px 60px 36px rgba(23, 32, 44, 0.05), 0px 26px 26px rgba(23, 32, 44, 0.09), 0px 7px 15px rgba(23, 32, 44, 0.1), 0px 0px 0px rgba(23, 32, 44, 0.1);
+                    border-radius: 100px;
+                    width: 726px;
+                    height: 48px;
+                    border: none;
+                    padding-left: 23px;
+                    background: url(../../image/number.svg) no-repeat center;
+                    background-position: 699px;
+                    z-index: 3;
+                }
+                input::placeholder {
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 130%;
+                    color: #A2A4AB;
+                  }
+            }
+            .logContent {
+                padding: 0px;
+                height: 50px;
+                margin-top: 340px;
+                z-index: 3;
+                .login {
+                    background: #F9F9F9;                    
+                    box-shadow: 0px 106px 42px rgba(23, 32, 44, 0.01), 0px 60px 36px rgba(23, 32, 44, 0.05), 0px 26px 26px rgba(23, 32, 44, 0.09), 0px 7px 15px rgba(23, 32, 44, 0.1), 0px 0px 0px rgba(23, 32, 44, 0.1);
+                    border-radius: 100px;
+                    width: 726px;
+                    height: 48px;
+                    border: none;
+                    padding-left: 23px;
+                    background: url(../../image/loginImage.svg) no-repeat center;
+                    background-position: 699px;
+                    z-index: 3;
+                }
+                input::placeholder {
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 130%;
+                    color: #A2A4AB;
+                  }
+            }
+    }
+    }
+    .forgotRemember {
+        margin-top: 16px;
+        display: flex;
+        z-index: 3;
+        .remember{
+            margin-right: 207px;
+            .checkbox {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+            .checkbox+label::before {
+                content: '';
+                display: inline-block;
+                background: #A2A4AB;
+                border-radius: 100px;
+                height: 12px;
+                width: 12px;
+                margin-right: 6px;
+                cursor: pointer;
+            }
+
+                .custom-checkbox:checked+label::before {
+                    border-color: #0b76ef;
+                    background-color: #0b76ef;
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+                }
+                .checkbox:not(:disabled):not(:checked)+label:hover::before {
+                    border-color: #b3d7ff;
+                  }
+                  /* стили для активного состояния чекбокса (при нажатии на него) */
+                  .checkbox:not(:disabled):active+label::before {
+                    background-color: #b3d7ff;
+                    border-color: #b3d7ff;
+                  }
+                  /* стили для чекбокса, находящегося в фокусе */
+                  .checkbox:focus+label::before {
+                    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                  }
+                  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+                  .checkbox:focus:not(:checked)+label::before {
+                    border-color: #80bdff;
+                  }
+                  /* стили для чекбокса, находящегося в состоянии disabled */
+                  .checkbox:disabled+label::before {
+                    background-color: #e9ecef;
+                  }
+
+                  .rememberLabel {
+                    color: #686A74;
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 130%;
+                  }
+              
+        }
+                .forgot {
+                    margin-left: 207px;
+                    .forgotPassword {
+                        font-family: 'Archivo';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 130%;
+                        color: #2069E0;
+                        text-decoration: none;
+                    }
+
+        }
+    }
+    .sighIn {
+        margin-top: 86px;
+        .but {
+            width: 254px;
+            height: 60px;
+            background: #FFFFFF;
+            box-shadow: 0px 106px 42px rgba(23, 32, 44, 0.01), 0px 60px 36px rgba(23, 32, 44, 0.05), 0px 26px 26px rgba(23, 32, 44, 0.09), 0px 7px 15px rgba(23, 32, 44, 0.1), 0px 0px 0px rgba(23, 32, 44, 0.1);
+            border-radius: 100px;
+            border: none;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 33px;           
+            color: #2069E0;
+        }
+    }
+    .sighUp {
+        margin-top: 17px;
+        .p {
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 130%;
+            color: #1E1E1E;
+        }
+        .sighUpBut {
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 130%;
+            color: #2069E0;
+            text-decoration: none;
+        }
+    }
+}
