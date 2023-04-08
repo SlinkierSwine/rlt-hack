@@ -8,7 +8,7 @@ class Company(Base):
     id = db.Column(db.Integer, primary_key=True, index=True)
     name = db.Column(db.String)
 
-    company_moderator = db.orm.relationship("CompanyModerator", uselist=False, backref="company")
+    company_moderators = db.orm.relationship("CompanyModerator",  backref="company")
 
 
 class CompanyModerator(Base):
