@@ -1,0 +1,40 @@
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    .chapterCourse {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        color: #1E1E1E;
+    }
+    .text {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 140%;
+        color: #1E1E1E;
+        margin-top: 60px;
+    }
+    .arrows {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px ;
+        .leftArrow {
+            background: #FFFFFF;
+            border: 1px solid #1E1E1E;
+            border-radius: 8px;
+            padding: 9px 64px 9px 64px;
+            margin-right: 150px;
+        }
+        .rightArrow {
+            background: #FFFFFF;
+            border: 1px solid #1E1E1E;
+            border-radius: 8px;
+            padding: 9px 64px 9px 64px;
+            margin-left: 150px;
+        }
+    }
+}

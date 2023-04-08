@@ -7,6 +7,7 @@ import { Home } from '../../pages/home/Home'
 import { About } from '../../pages/about/About'
 import { Catalog } from '../../pages/catalog/Catalog'
 import { PersonalArea } from '../../pages/personalArea/PersonalArea'
+import { Course } from '../../pages/course/Course'
 
 
 
@@ -18,7 +19,7 @@ const Layout = () => {
                 <div className='content'>
                     <div className='routes'>
                     <Routes>
-                            <Route path = '/' exact element= {<Home/>}/>
+                            <Route path = '/' exact element= {<Course/>}/>
                             <Route path = '/login' exact  element = {<Login/>}/>
                             <Route path = '/about' exact  element = {<About/>}/>
                             <Route path = '/catalog' exact  element = {<Catalog/>}/>
