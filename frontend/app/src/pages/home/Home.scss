@@ -39,6 +39,7 @@
             margin-top: 68px;
             display: flex;
             margin-left: 30px;
+            z-index: 2;
             .mounth {
                 display: flex;
                 flex-direction: column;
@@ -78,6 +79,7 @@
         border-radius: 8px;
         margin-right: 20px;
         
+        
         filter: drop-shadow(0px 106px 42px rgba(23, 32, 44, 0.01)) drop-shadow(0px 60px 36px rgba(23, 32, 44, 0.05)) drop-shadow(0px 26px 26px rgba(23, 32, 44, 0.09)) drop-shadow(0px 7px 15px rgba(23, 32, 44, 0.1)) drop-shadow(0px 0px 0px rgba(23, 32, 44, 0.1));
         .backPersona1 {
             width: 100%;
@@ -103,6 +105,7 @@
             padding-left: 17px;
             flex-direction: column;
             width: 100%;
+            z-index: 2;
             .nameFoto {
                 display: flex;
                 .foto {
