@@ -18,3 +18,22 @@ class Task(Base):
     type = db.Column(db.Enum(TaskType))
 
     lesson_id = db.Column(db.Integer, db.ForeignKey("lessons.id"))
+
+
+class Question(Base):
+    __tablename__ = "questions"
+
+    id = db.Column(db.Integer, primary_key=True, index=True)
+    text = db.Column(db.String)
+
+    answers = db.orm.relationship("Answer",  backref="question")
+
+
+class Answer(Base):
+    __tablename__ = "answers"
+
+    id = db.Column(db.Integer, primary_key=True, index=True)
+    text = db.Column(db.String)
+    is_right = db.Column(db.Boolean, nullable=False)
+
+    question_id = db.Column(db.Integer, db.ForeignKey("questions.id"))

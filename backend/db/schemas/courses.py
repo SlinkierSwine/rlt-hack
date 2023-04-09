@@ -1,21 +1,7 @@
 from pydantic import BaseModel
 
-from backend.db.models.task import TaskType
+from backend.db.schemas.task import Task
 
-
-class TaskBase(BaseModel):
-    title: str
-    description: str
-    type: TaskType
-    lesson_id: int
-
-
-class TaskCreate(TaskBase):
-    pass
-
-
-class Task(TaskBase):
-    id: int
 
 
 class LessonBase(BaseModel):
