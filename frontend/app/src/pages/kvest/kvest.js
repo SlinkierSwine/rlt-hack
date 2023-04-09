@@ -9,7 +9,6 @@ export const Kvest = () => {
             <Header/>
             <div className="kvestContent">
                 <p className="textH">Примите правильные выбора для развития бизнеса, чтобы достичь успеха!</p>
-                <p className="textHU">Квест 1</p>
                 <div className="mid">
                     <div className="inMid1">
                         <h1>Пролог:</h1>
@@ -33,17 +32,17 @@ export const Kvest = () => {
                 </div>
 
                 <div className="buttons">
-                    <button className="btn">
+                    <a href="../../pages/outcome/outcome.js"><button className="btn">
                         Выбор1 
-                    </button>
+                    </button></a>
 
-                    <button className="btn">
+                    <NavLink to='/outcome'><button className="btn">
                         Выбор1 
-                    </button>
+                    </button></NavLink>
 
-                    <button className="btn">
+                    <NavLink to='/outcome'><button className="btn">
                         Выбор1 
-                    </button>
+                    </button></NavLink>
 
                 </div>
             </div>

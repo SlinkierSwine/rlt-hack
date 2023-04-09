@@ -10,6 +10,7 @@ import { PersonalArea } from '../../pages/personalArea/PersonalArea'
 import { Course } from '../../pages/course/Course'
 import { Registration } from '../../pages/registration/registration'
 import { Kvest } from '../../pages/kvest/kvest'
+import { Outcome } from '../../pages/outcome/outcome'
 
 
 
@@ -30,6 +31,7 @@ const Layout = () => {
                             <Route path = '/course' exact  element = {<Course/>}/>
                             <Route path = '/registration' exact  element = {<Registration/>}/>
                             <Route path = '/kvest' exact  element = {<Kvest/>}/>
+                            <Route path = '/outcome' exact  element = {<Outcome/>}/>
                     </Routes>
                     </div>
                 </div>
