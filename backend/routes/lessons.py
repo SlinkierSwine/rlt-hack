@@ -5,16 +5,14 @@ from backend.db.schemas import course as schema
 from backend.db.models import course as model
 from backend.db.crud import course as crud
 from backend.db.db import get_db
-import json
 
 
-router = APIRouter(prefix="/lesson/")
+router = APIRouter(prefix="/lesson")
 
-@router.get("/")
-def lesson_page(course: schema.CourseCreate, db: Session = Depends(get_db)):
-    db_course = crud.get_lesson(db, id=course.id)
-    response = {'message': db_course}
-    return response
+@router.get("/", response_model=schema.Lesson | dict)
+def lesson_page(lesson_id: int, db: Session = Depends(get_db)):
+    db_lesson = crud.get_lesson(db, lesson_id=lesson_id)
+    return db_lesson or {}
 
 
 class TaskRequest(BaseModel):

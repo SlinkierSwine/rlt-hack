@@ -19,6 +19,8 @@ class Task(Base):
 
     lesson_id = db.Column(db.Integer, db.ForeignKey("lessons.id"))
 
+    users = db.orm.relationship("User", backref="task")
+
 
 class Question(Base):
     __tablename__ = "questions"

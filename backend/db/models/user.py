@@ -27,4 +27,5 @@ class User(Base):
     rating = db.Column(db.Integer, default=0)
     
     base_user_id = db.Column(db.Integer, db.ForeignKey("base_users.id"))
+    current_tasl_id = db.Column(db.Integer, db.ForeignKey("tasks.id"))
 
