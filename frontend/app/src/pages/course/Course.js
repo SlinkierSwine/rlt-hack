@@ -46,9 +46,7 @@ export const Course = () => {
                                 <div className="contentCourse">
                                     <Fragment>
                                         <Routes>
-                                            <Route path = '/textCourse' exact element= {<TextCourse/>}/>
-                                            <Route path = '/textCourse2' exact element= {<TextCourse2/>}/>
-                                            <Route path = '/answer' exact  element = {<Answer/>}/>
+                                            <Route path = '/' exact element= {<TextCourse/>}/>
                                         </Routes>
                                     </Fragment>
                                 </div>

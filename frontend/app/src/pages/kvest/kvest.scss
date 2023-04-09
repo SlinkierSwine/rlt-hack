@@ -1,0 +1,161 @@
+.textH {
+    position: absolute;
+    width: 1297px;
+    height: 26px;
+    left: 20px;
+    top: 199px;
+    /* Archivo/H2 */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+
+    leading-trim: both;
+    text-edge: cap;
+    /* V3/Dark */
+    color: #1E1E1E;
+}
+
+
+.textHU {
+    position: absolute;
+    width: 96px;
+    height: 19px;
+    left: 20px;
+    top: 258px;
+    /* Archivo/mini_logo */
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 140%;
+    /* or 39px */
+    /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+    leading-trim: both;
+    text-edge: cap;
+    /* V3/Dark */
+    color: #1E1E1E;
+}
+
+.mid {
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    gap: 44px;
+    position: absolute;
+    left: 20px;
+    top: 355px;
+    /* V1/White */
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    width:100%;
+}
+
+.mid h1 {
+        width: 132px;
+        height: 26px;
+        /* Archivo/H2 */
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+        leading-trim: both;
+        text-edge: cap;
+        /* V3/Dark */
+        color: #1E1E1E;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+.inMid2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.inMid2 div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 28px 12px;
+    gap: 10px;
+    width: 274px;
+    height: 168px;
+    /* V1/blue */
+    background: #2069E0;
+    border-radius: 8px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.inMid2 div:last-child {
+    margin-top: 28px;
+}
+
+    .inMid2 div p {
+        width: 250px;
+        height: 58px;
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 140%;
+        /* or 39px */
+        /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+        leading-trim: both;
+        text-edge: cap;
+        /* V1/White */
+        color: #FFFFFF;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+.inMid1 p {
+    width: 575px;
+    height: 214px;
+    /* Archivo/mini_logo */
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 140%;
+    /* or 39px */
+    /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+    leading-trim: both;
+    text-edge: cap;
+    /* V3/Dark */
+    color: #1E1E1E;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.kvestContent {
+    margin-top: 60px;
+}

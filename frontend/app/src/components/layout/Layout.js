@@ -9,6 +9,7 @@ import { Catalog } from '../../pages/catalog/Catalog'
 import { PersonalArea } from '../../pages/personalArea/PersonalArea'
 import { Course } from '../../pages/course/Course'
 import { Registration } from '../../pages/registration/registration'
+import { Kvest } from '../../pages/kvest/kvest'
 
 
 
@@ -28,6 +29,7 @@ const Layout = () => {
                             <Route path = '/personalArea' exact  element = {<PersonalArea/>}/>
                             <Route path = '/course' exact  element = {<Course/>}/>
                             <Route path = '/registration' exact  element = {<Registration/>}/>
+                            <Route path = '/kvest' exact  element = {<Kvest/>}/>
                     </Routes>
                     </div>
                 </div>

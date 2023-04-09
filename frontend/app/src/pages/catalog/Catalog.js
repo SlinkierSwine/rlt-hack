@@ -11,7 +11,7 @@ export const Catalog = () => {
             <div className="catalogContent">
                 <h1>Ежедневные квесты</h1>
             <div className="lessons">
-                    <NavLink>
+                    <NavLink to= '/kvest'>
                         <div className="lesson">
                             <div className="backLesson"></div>
                             <div className="lessonContent">
@@ -20,7 +20,7 @@ export const Catalog = () => {
                             </div>
                         </div>
                     </NavLink>
-                    <NavLink>
+                    <NavLink to='/kvest'>
                         <div className="lesson">
                             <div className="backLesson"></div>
                             <div className="lessonContent">
