@@ -16,6 +16,9 @@ class AnswerCreate(AnswerBase):
 class Answer(AnswerBase):
     id: int
 
+    class Config:
+        orm_mode = True
+
 
 class QuestionBase(BaseModel):
     text: str
@@ -28,6 +31,9 @@ class QuestionCreate(QuestionBase):
 class Question(QuestionBase):
     id: int
     answers: list[Answer]
+
+    class Config:
+        orm_mode = True
 
 
 class TaskBase(BaseModel):
@@ -44,4 +50,7 @@ class TaskCreate(TaskBase):
 class Task(TaskBase):
     id: int
     questions: list[Question]
+
+    class Config:
+        orm_mode = True
 

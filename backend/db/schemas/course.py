@@ -17,6 +17,9 @@ class Lesson(LessonBase):
     id: int
     tasks: list[Task]
 
+    class Config:
+        orm_mode = True
+
 
 class ChapterBase(BaseModel):
     index: int
@@ -32,10 +35,13 @@ class Chapter(ChapterBase):
     id: int
     lessons: list[Lesson]
 
+    class Config:
+        orm_mode = True
+
 
 class CourseBase(BaseModel):
     title: str
-    description: str
+    description: str | None
 
 
 class CourseCreate(CourseBase):
@@ -45,3 +51,6 @@ class CourseCreate(CourseBase):
 class Course(CourseBase):
     id: int
     chapters: list[Chapter]
+
+    class Config:
+        orm_mode = True

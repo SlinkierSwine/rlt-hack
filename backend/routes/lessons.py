@@ -12,7 +12,7 @@ router = APIRouter(prefix="/lesson")
 @router.get("/", response_model=schema.Lesson | dict)
 def lesson_page(lesson_id: int, db: Session = Depends(get_db)):
     db_lesson = crud.get_lesson(db, lesson_id=lesson_id)
-    return db_lesson or {}
+    return db_lesson or {"message": "No lessons availible"}
 
 
 class TaskRequest(BaseModel):

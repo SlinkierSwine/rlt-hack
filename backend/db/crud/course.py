@@ -11,6 +11,10 @@ def get_all_courses(db: Session):
     return db.query(model.Course).all()
 
 
+def get_all_chapters(db: Session, course_id: int):
+    return db.query(model.Chapter).filter(model.Chapter.course_id == course_id).all()
+
+
 def get_chapter(db: Session, chapter_id: int):
     return db.query(model.Chapter).filter(model.Chapter.id == chapter_id).first()
 
