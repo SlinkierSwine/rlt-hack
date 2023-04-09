@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
+.contentHome {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    margin-top: 105px;
+    flex-direction: row-reverse;
+
+    .calendar {
+        width: 690px;
+        background: #FFFFFF;
+        height: 280px;
+        border-radius: 8px;
+        position: relative;
+        display: flex;
+        filter: drop-shadow(0px 106px 42px rgba(23, 32, 44, 0.01)) drop-shadow(0px 60px 36px rgba(23, 32, 44, 0.05)) drop-shadow(0px 26px 26px rgba(23, 32, 44, 0.09)) drop-shadow(0px 7px 15px rgba(23, 32, 44, 0.1)) drop-shadow(0px 0px 0px rgba(23, 32, 44, 0.1));
+        .backCalendar {
+            width: 100%;
+            height: 100%;
+            background: url('../../image/decortCalendar.svg') no-repeat center right;
+            position: absolute;
+            z-index: 1;
+            display: inline-block;
+        }
+        .hCalendar {
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 140%;
+            color: #1E1E1E;
+            position: absolute;
+            z-index: 2;
+            margin-top: 22px;
+            margin-left: 22px;
+        }
+
+        .mounthes {
+            margin-top: 68px;
+            display: flex;
+            margin-left: 30px;
+            .mounth {
+                display: flex;
+                flex-direction: column;
+                .mounthName{
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: #686A74;
+                }
+                .days {
+                    margin-top: 11px;
+                    width: 180px;
+                    height: 150px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .day {
+                        width: 30px;
+                        height: 30px;
+                        background: #E5E5EA;
+                        margin:5px;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+    .persona {
+        width: 335px;
+        background: #FFFFFF;
+        height: 280px;
+        position: relative;
+        display: flex;
+        border-radius: 8px;
+        margin-right: 20px;
+        
+        filter: drop-shadow(0px 106px 42px rgba(23, 32, 44, 0.01)) drop-shadow(0px 60px 36px rgba(23, 32, 44, 0.05)) drop-shadow(0px 26px 26px rgba(23, 32, 44, 0.09)) drop-shadow(0px 7px 15px rgba(23, 32, 44, 0.1)) drop-shadow(0px 0px 0px rgba(23, 32, 44, 0.1));
+        .backPersona1 {
+            width: 100%;
+            height: 100%;
+            background: url('../../image/decor1.svg') no-repeat -10px -10px;
+            position: absolute;
+            z-index: 1;
+            display: inline-block;
+        }
+        .backPersona2 {
+            width: 100%;
+            height: 100%;
+            background: url('../../image/decor2.svg') no-repeat 214px 40px;
+            position: absolute;
+            z-index: 1;
+            display: inline-block;
+        }
+
+        .personalContent {
+            display: flex;
+            padding-top: 27px;
+            padding-bottom: 37px;
+            padding-left: 17px;
+            flex-direction: column;
+            width: 100%;
+            .nameFoto {
+                display: flex;
+                .foto {
+                    background: #E5E5EA;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 80px;
+                }
+                .name {
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 140%;
+                    color: #1E1E1E;
+                    margin-left: 19px;
+                }
+            }
+            .rating {
+                display: flex;
+                margin-top: 25px;
+                flex-direction: column;
+                .personalRating{
+                    display: flex;
+                    .hPersonalRating {
+                        font-family: 'Archivo';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 20px;
+                        color: #1E1E1E;
+                        margin-right: 35px;
+
+                    }
+                    .personalRatingResult {
+                        font-family: 'Archivo';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 20px;
+                        color: #2069E0;
+                        margin-left: 8px;
+
+                    }
+            }
+            .grouplRating{
+                display: flex;
+                margin-top: 20px;
+                .hGroupRating {
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #1E1E1E;
+                    margin-right: 35px;
+
+                }
+                .groupRatingResult {
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #2069E0;
+                    margin-left: 8px;
+
+                }
+        }
+        .efficiency{
+            display: flex;
+            margin-top: 51px;
+            .hEfficiency{
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+                color: #1E1E1E;
+                margin-right: 35px;
+
+            }
+            .efficiencyResult {
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+                color: #2069E0;
+                margin-left: 8px;
+
+            }
+    }
+        
+            }
+        }
+    }
+
+    .lessons{
+        .lesson {
+            margin-bottom: 60px;
+            width: 335px;
+            height: 280px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            margin-right: 20px;
+            filter: drop-shadow(0px 106px 42px rgba(23, 32, 44, 0.01)) drop-shadow(0px 60px 36px rgba(23, 32, 44, 0.05)) drop-shadow(0px 26px 26px rgba(23, 32, 44, 0.09)) drop-shadow(0px 7px 15px rgba(23, 32, 44, 0.1)) drop-shadow(0px 0px 0px rgba(23, 32, 44, 0.1));
+            .backLesson {
+                width: 100%;
+                height: 100%;
+                background: url('../../image/decorLesson.svg') no-repeat center right;
+                position: absolute;
+                z-index: 1;
+                display: inline-block;
+            }
+            .lessonContent {
+                display: flex;
+                flex-direction: column;
+                padding-left: 25px;
+                .hLesson {
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 140%;
+                    color: #1E1E1E;
+                    margin-top: 24px;
+                }
+                .chapter {
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: #686A74;
+                    margin-top: 16px;
+                }
+                .procent {
+                    margin-top: 120px;
+                    display: flex;
+                    .procentNumber {
+                        font-family: 'Archivo';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 28px;
+                        line-height: 130%;
+                        color: #2069E0;
+                        margin-right: 27px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.news{
+    width: 690px;
+    height: 280px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    filter: drop-shadow(0px 106px 42px rgba(23, 32, 44, 0.01)) drop-shadow(0px 60px 36px rgba(23, 32, 44, 0.05)) drop-shadow(0px 26px 26px rgba(23, 32, 44, 0.09)) drop-shadow(0px 7px 15px rgba(23, 32, 44, 0.1)) drop-shadow(0px 0px 0px rgba(23, 32, 44, 0.1));
+    .newsBack {
+        width: 100%;
+        height: 100%;
+        background: url('../../image/decorNews.svg') no-repeat center right;
+        position: absolute;
+        z-index: 1;
+        display: inline-block;
+    }
+    .hNews {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 140%;
+        color: #1E1E1E;
+        margin-top: 22px;
+        margin-left: 22px;
+    } 
+    .nC {
+        display: flex;
+        margin-top: 30px;
+        .leftArrow{
+            margin-top: 53px;
+            margin-right: 14px;
+            margin-left: 21px;
+        }
+        .new {
+            width: 246px;
+            height: 155px;
+            background: #FFFFFF;
+            border: 1px solid #1E1E1E;
+            border-radius: 8px;
+            text-align: center;
+            margin-right: 40px;
+            .hNew {
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 22px;
+                color: #1E1E1E;
+                margin-top: 9px;
+            }
+        }
+
+        .rightArrow {
+            margin-top: 53px;
+            margin-left: -26px;
+        }
+        
+    }
+}
