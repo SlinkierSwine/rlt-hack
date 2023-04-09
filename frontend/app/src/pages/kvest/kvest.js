@@ -21,15 +21,30 @@ export const Kvest = () => {
                     </div>
                     <div className="inMid2">
                         <div>
-                            <p>Государственные закупки(44-ФЗ)</p>
+                            <p>Выбор 1</p>
                         </div>
                         <div>
-                            <p>Государственные закупки(44-ФЗ)</p>
+                            <p>Выбор 2</p>
                         </div>
                         <div>
-                            <p>Государственные закупки(44-ФЗ)</p>
+                            <p>Выбор 3</p>
                         </div>
                     </div>
+                </div>
+
+                <div className="buttons">
+                    <button className="btn">
+                        Выбор1 
+                    </button>
+
+                    <button className="btn">
+                        Выбор1 
+                    </button>
+
+                    <button className="btn">
+                        Выбор1 
+                    </button>
+
                 </div>
             </div>
         </Fragment>

@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 document.body.style.margin = "0px"
 document.body.style.background = "#F9F9F9"
+document.body.style.overflowX = 'hidden';
 const app = 
 <BrowserRouter>
 <React.StrictMode>
